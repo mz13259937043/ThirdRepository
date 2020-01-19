@@ -1,0 +1,7 @@
+package com.mao.pro.service;
+
+public interface PerfectInfoService {
+
+	int realnameCertify(String realname, String idcard);
+
+}

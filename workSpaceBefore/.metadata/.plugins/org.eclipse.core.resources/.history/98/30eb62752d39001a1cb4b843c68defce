@@ -1,0 +1,9 @@
+package com.mao.pro.service;
+
+import org.apache.ibatis.annotations.Insert;
+
+public interface PerfectInfoService {
+
+	int realnameCertify(String realname, String idcard);
+
+}

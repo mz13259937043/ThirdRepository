@@ -1,0 +1,17 @@
+package com.mao.pro.model;
+
+import lombok.Data;
+
+@Data
+public class PerfectInfo {
+
+	private int pid;
+	private int phone;
+	private String friend;
+	private char sex;
+	private String motto;
+	private String label;
+	private String realname;
+	private String idcard;
+	
+}

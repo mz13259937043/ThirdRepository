@@ -1,0 +1,17 @@
+package com.mao.pro.model;
+
+import java.util.Date;
+
+import lombok.Data;
+
+@Data
+public class RecuritRequire {
+
+	private Integer rid;
+	private String industry;
+	private String recruitNeed;
+	private String salaryScope;
+	private Integer amountNeed;
+	private Date releaseTime;
+	
+}

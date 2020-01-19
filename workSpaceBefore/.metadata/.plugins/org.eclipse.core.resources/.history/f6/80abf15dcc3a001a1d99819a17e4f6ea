@@ -1,0 +1,30 @@
+package com.mao.pro.controller;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.mao.pro.model.PerfectInfo;
+import com.mao.pro.service.PerfectInfoService;
+
+@Controller
+@RequestMapping("/addInfo")
+public class AddInfoController {
+	
+	@Resource
+	private PerfectInfoService perfectInfoService;
+	
+	@GetMapping("/realname")
+	public void realnameCertify(String realname,String idcard) {
+		int x = perfectInfoService.realnameCertify(realname,idcard);
+		System.out.println(x>0?"认证成功0":"认证失败");
+	}
+	@GetMapping("/fillOther")
+	public void fillOtherInfo(PerfectInfo perfectInfo) {
+		int x = perfectInfo.fillOther(perfectInfo);
+	}
+
+}

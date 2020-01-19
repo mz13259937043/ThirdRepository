@@ -1,0 +1,19 @@
+package com.mao.pro.controller;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Controller;
+
+import com.mao.pro.service.PerfectInfoService;
+
+@Controller
+public class AddInfoController {
+	
+	private PerfectInfoService perfectInfoService;
+	
+	public void realnameCertify(String realname,String idcard) {
+		int x = perfectInfoService.realnameCertify(realname,idcard);
+		
+	}
+
+}

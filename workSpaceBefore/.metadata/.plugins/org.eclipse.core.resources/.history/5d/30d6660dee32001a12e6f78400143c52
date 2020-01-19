@@ -1,0 +1,32 @@
+package com.mao.test.one;
+
+import java.io.File;
+
+public class Quest {
+
+	public void readC() {
+		File f1 = new File("c:/");
+		
+	}
+	public static String search(File f1) {
+		if (f1.isFile()&&f1.exists()&&f1!=null) {
+			if (f1.getAbsolutePath().contains("MySql")) {
+				return f1.getAbsolutePath();
+			}
+		}else if (f1.isDirectory()&&f1!=null) {
+			File[] files = f1.listFiles();
+			if (files!=null&&files.length!=0) {
+				for (File file : files) {
+					System.out.println("1");
+					search(file);
+				}
+			}
+		}else {
+			return "";
+		}
+	}
+	public static void main(String[] args) {
+		search(new File("c:/"));
+	}
+	
+}

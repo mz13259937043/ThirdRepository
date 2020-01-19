@@ -1,0 +1,7 @@
+package com.mao.pro.mappers;
+
+import com.mao.pro.service.PerfectInfoService;
+
+public interface perfectInfoMapper extends PerfectInfoService{
+
+}

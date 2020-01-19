@@ -1,0 +1,10 @@
+package com.mao.pro.service;
+
+import org.apache.ibatis.annotations.Insert;
+
+public interface PerfectInfoService {
+
+	@Insert("insert into perfectInfo(realname,idcard) values(#{realname},#{idcard})")
+	int realnameCertify(String realname, String idcard);
+
+}

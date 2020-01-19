@@ -1,0 +1,13 @@
+package com.mao.pro.mappers;
+
+import com.mao.pro.service.PerfectInfoService;
+
+public class PerfectInfoMapper implements PerfectInfoService {
+
+	@Override
+	public int realnameCertify(String realname, String idcard) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

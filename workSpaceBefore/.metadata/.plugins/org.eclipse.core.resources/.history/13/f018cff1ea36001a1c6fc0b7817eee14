@@ -1,0 +1,7 @@
+package com.mao.pro.mappers;
+
+public interface PerfectInfoMapper {
+
+	int realnameCertify(String realname, String idcard);
+
+}

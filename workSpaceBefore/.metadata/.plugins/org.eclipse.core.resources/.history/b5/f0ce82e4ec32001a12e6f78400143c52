@@ -1,0 +1,11 @@
+package com.mao.test.one;
+
+import java.io.File;
+
+public class Quest {
+
+	public void readC() {
+		File f1 = new File("c;/");
+		
+	}
+}
